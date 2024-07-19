@@ -25,6 +25,7 @@ APB_Slave slave(Penable_w,Pwrite_w,
 	master.s_read(); #100
 	 master.b_write(); #100
 	 master.s_write(); #100
+	 master.burst_read(); #100
 	$finish();
 end
  
